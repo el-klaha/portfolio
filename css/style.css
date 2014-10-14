@@ -1,0 +1,115 @@
+/*--- GLOBAL STYLES ---*/
+
+*, *:before, *:after {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 3em;
+	color: #222;
+}
+
+h2 {
+	font-family: 'Oswald', sans-serif;
+	font-size: 2em;
+}
+
+p {
+	font-family: 'Open Sans', sans-serif;
+	color: #777;
+}
+
+/*--- NAV ---*/
+
+ul {
+	margin-left: -25px
+}
+
+li {
+	float: right;
+	list-style: none;
+	margin: 35px 20px 0;
+	color: #999;
+}
+
+.divider, .divider2 {
+	border-bottom: 1px solid #ddd;
+}
+
+.divider2 {
+	margin-top: 25px;
+}
+
+#work:hover, #about:hover, #workie:hover, #aboutie:hover {
+	cursor: pointer;
+	color: black;
+}
+
+/*--- WORKS ---*/
+
+.works {
+	margin-top: 50px;
+	display: none;
+	
+}
+
+.content {
+	overflow:hidden;
+	text-align:center;
+}
+
+.a {
+	height: 250px;
+	width: 250px;
+	display: inline-block;
+	margin: 20px 20px;
+}
+
+.works div img {
+	max-width: 100%;
+	margin-top: 12px;
+	opacity: .5;
+	border: 2px solid #ddd;
+}
+
+/*--- ABOUT ---*/
+
+.about {
+	margin-top: 50px;
+}
+
+.pic img {
+	max-width: 75%;
+}
+
+/*--- MEDIA QUERIES ---*/
+
+@media (min-width: 768px) and (max-width: 991px) { 
+	.pic {
+		padding-top: 25px;
+		text-align: center;
+	}
+	.divider2 {
+		display: none;
+	}
+}
+
+@media (max-width: 767px) { 
+	.pic {
+		padding-top: 25px;
+		text-align: center;
+	}
+	.divider2 {
+		display: none;
+	}
+	h1 {
+		font-size: 2.5em
+	}
+	li {
+		float: none;
+	}
+}
